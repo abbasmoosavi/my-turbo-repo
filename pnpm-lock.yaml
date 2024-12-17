@@ -69,6 +69,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@repo/template-astra':
+        specifier: workspace:*
+        version: link:../../packages/templates/astra
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -135,6 +138,37 @@ importers:
         version: 3.4.1
 
   packages/config-typescript: {}
+
+  packages/templates/astra:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: ../workspace:*
+        version: link:../workspace:*
+      '@repo/tailwind-config':
+        specifier: ../workspace:*
+        version: link:../workspace:*
+      '@repo/typescript-config':
+        specifier: ../workspace:*
+        version: link:../workspace:*
+      '@types/react':
+        specifier: ^18.2.61
+        version: 18.2.61
+      autoprefixer:
+        specifier: ^10.4.18
+        version: 10.4.18(postcss@8.4.35)
+      postcss:
+        specifier: ^8.4.35
+        version: 8.4.35
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.1
+      typescript:
+        specifier: 5.5.4
+        version: 5.5.4
 
   packages/ui:
     dependencies:
