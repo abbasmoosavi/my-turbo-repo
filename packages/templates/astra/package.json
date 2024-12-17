@@ -9,7 +9,7 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./card": "./src/card.tsx"
+    "./home": "./src/app/page.tsx"
   },
   "license": "MIT",
   "scripts": {
@@ -19,7 +19,8 @@
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "next": "^14.2.3"
   },
   "devDependencies": {
     "@repo/eslint-config": "../workspace:*",
