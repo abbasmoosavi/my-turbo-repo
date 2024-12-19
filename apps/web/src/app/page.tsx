@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { Card } from "@repo/ui/card";
-import { Home as AstraHome } from "@repo/template-astra/home";
+// import { Home as AstraHome } from "@repo/template-astra/home";
+import { TemplateAria } from '@repo/templates';
 import { useState } from "react";
 
 function Gradient({
@@ -52,7 +53,7 @@ export default function Page(): JSX.Element {
   return (
     <>
       {selectedTemplate === 'astra' ? (
-        <AstraHome onChangeTemplate={setSelectedTemplate.bind(null, 'nest')} />
+        <TemplateAria />
       ) : (
         <main className="flex flex-col items-center justify-between min-h-screen p-24">
           <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">

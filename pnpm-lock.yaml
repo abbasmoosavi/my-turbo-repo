@@ -72,6 +72,9 @@ importers:
       '@repo/template-astra':
         specifier: workspace:*
         version: link:../../packages/templates/astra
+      '@repo/templates':
+        specifier: workspace:*
+        version: link:../../packages/templates
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -138,6 +141,8 @@ importers:
         version: 3.4.1
 
   packages/config-typescript: {}
+
+  packages/templates: {}
 
   packages/templates/astra:
     dependencies:
